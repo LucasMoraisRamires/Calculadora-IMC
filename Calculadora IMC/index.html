@@ -18,22 +18,28 @@
     <section>
        
         <div class="form-section">
-            <h2 class="title" align="center">Calculadora de IMC</h2>
+            <h1 class="title" align="center">Calculadora de IMC</h1>
             <div class="form">
-               
 
+                    <h2>Insira seus dados e calcule seu IMC:</h2>
+
+                    <br>
                     <label for="">Peso em KG:</label>
                     <br>
-                    <input type="number" name="" id="peso" placeholder="Exemplo: 90..."
+                    <input type="number" name="" id="peso" placeholder="Exemplo: 90..." require>
                     <br>
                     <br>
                     <br>
                     <label for="">Altura em cm :</label>
                     <br>
-                    <input type="number" name="" id="altura" placeholder="Exemplo: 180...">
+                    <input type="number" name="" id="altura" placeholder="Exemplo: 180..." require>
                     <br>
                     <br>
-                    <button id="calculate" onclick="calcular()">Calcular</button>
+
+                    <div class="button-wrapper">
+                        <button id="calculate" onclick="calcular()">Calcular</button>
+
+                    </div>
                 
 
                 <div  class="resposta" id="resposta">

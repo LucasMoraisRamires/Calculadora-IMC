@@ -1,25 +1,28 @@
 
 body{
-    background-color: slateblue;
+    background: url(./img/fundo.jpg)
 }
 
 
 h1{
     
-color: blueviolet;
-
-}
-
- h2{
     margin:0 auto;
     color: snow;
     letter-spacing: 2px;
+    font-size: 30px;
+
 }
+
+
+h2{
+    color: rgb(253, 118, 7);
+}
+
 
 
 .form-section{
     width:500px;
-    height:450px;
+    height:500px;
    
     margin: 0 auto;
     padding-top: 10px;
@@ -35,12 +38,12 @@ color: blueviolet;
 .form{
     background-color: white;
     width:400px;
-    height: 300px;
+    height: 400px;
     margin-top: 80px;
    border: solid 1px;
     margin:0 auto;
     margin-top: 20px;
-    padding: 20px 20px 20px 20px;
+    padding: 40px 20px 20px 20px;
     border-radius: 2%;
     
    
@@ -57,13 +60,19 @@ label{
 
 input{
     width: 390px;
-    height: 25px;
+    height: 45px;
     margin-top: 5px;
+    border: 1px solid  #b9c0ca;
     
    
 }
 
+input:focus{
+    outline: 0;
+    border: 1px solid  #3882dd;
+    
 
+}
 
 .peso  {
 
@@ -71,21 +80,32 @@ input{
     background-color: brown;
     margin-top: 50px;
     
+    
+}
+
+.button-wrapper{
+    display: flex;
+    justify-content: center;
 }
 
 button{
 
-    width: 120px;
-    height: 30px;
+    width: 200px;
+    height: 40px;
     cursor: pointer;
-    background-color: slateblue;
+    background-color: #3882dd;
     color: snow;
     font-weight: bold;
+    font-size: 18px;
+    border-color:  #3882dd;
     border-radius: 5px;
-    letter-spacing: 1px;
+    box-shadow: none;
+    letter-spacing: 3px;
     z-index: 1;
     position: relative;
     overflow: hidden;
+    margin-top: 0 auto;
+    
     
     
     
@@ -100,7 +120,7 @@ button::before{
     height: 30px;
     cursor: pointer;
     position: absolute;
-    background-color:  rgb(120, 102, 235);
+    background-color:  #3882dd;
     left:0;
     font-weight: bold;
     
@@ -119,6 +139,11 @@ button:hover:before{   /*ativa a mudança de estilo */
     width: 120px;
   }
 
+  button:focus{
+    outline: 0;
+    style: none;
+  }
+
 
 .resposta{
 
@@ -132,4 +157,3 @@ button:hover:before{   /*ativa a mudança de estilo */
     font-size: 18px;
     padding-top: 15px;
  }
-}
